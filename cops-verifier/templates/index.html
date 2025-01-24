@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPS Verifier Servicer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="topleft">
+          A <a href="http://COPS.io">Confidential Private Search</a> service by <a href="https://canarybit.eu" target="_blank">CanaryBit</a>
+        </div>
+        <div class="middle">
+          <h3>Welcome!</h3>
+          <hr>
+          <h1>
+              <img class="logo" src="https://www.canarybit.eu/wp-content/uploads/2022/10/cops-verifier_logo.png">
+              Confidential Private Search <span style="color:#0097a7"> Verifier</span>
+          </h1>
+          <a class="button" href="{{ url_for('report') }}">Submit Report</a>
+        </div>
+        <div class="bottomleft">
+          © Canary Bit AB | <a href="#">Terms & Conditions</a> - <a href="https://cops.io" target="_blank">Support</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

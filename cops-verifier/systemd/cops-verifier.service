@@ -1,0 +1,10 @@
+[Unit]
+Description=COPS verifier
+[Install]
+WantedBy=multi-user.target
+[Service]
+Type=simple
+PermissionsStartOnly=true
+ExecStart=/usr/bin/python3 /opt/cops/verifier/server.py
+Restart=on-failure
+TimeoutSec=600

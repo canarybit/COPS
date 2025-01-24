@@ -1,0 +1,55 @@
+Version: 2
+Guest SVN: 0
+Policy: 0xb0000
+ - Debugging Allowed:       Yes
+ - Migration Agent Allowed: No
+ - SMT Allowed:             Yes
+ - Min. ABI Major:          0
+ - Min. ABI Minor:          0
+Family ID:
+    00000000000000000000000000000000
+Image ID:
+    00000000000000000000000000000000
+VMPL: 0
+Signature Algorithm: 1 (ECDSA P-384 with SHA-384)
+Platform Version: 0200000000000668
+ - Boot Loader SVN:   2
+ - TEE SVN:           0
+ - SNP firmware SVN:  6
+ - Microcode SVN:    68
+Platform Info: 0x1
+ - SMT Enabled: Yes
+Author Key Enabled: Yes
+Report Data:
+    347dfac92d42288fe34e97142e55d047eeb7e095d2ddf76702476280d78c8fbb
+    cfb56adae5e20d6d6e11f146a8d8703e302df356f648fb406b06b0504684ef9e
+Measurement:
+    0u54146d8fa4ca89c802487be1c6c825cb1d38cde7a0c5a2
+    8defcf0ec89f234269c690a49bf5aeba971d6426d7cc7dd9
+Host Data:
+    0000000000000000000000000000000000000000000000000000000000000000
+ID Key Digest:
+    ef3a05d322b6a00721afb003804661b22fd90721b8cde70d
+    78f07008d18bd72da7ca9a94dfc9f1edca1702888d74e7d8
+Author Key Digest:
+    a615de1c439df4a0f59be43e8c3bd1daa042c3a71be36481
+    c2c517d885a46a15a636aaf7d886aa0c14aea41e6f3a7363
+Report ID:
+    b88020f9ffd42c508e13f72cabf31940a91b495256d4a4ef21539dd90c0b17ed
+Migration Agent Report ID:
+    ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Reported TCB: 0200000000000668
+ - Boot Loader SVN:   2
+ - TEE SVN:           0
+ - SNP firmware SVN:  6
+ - Microcode SVN:    68
+Chip ID:
+    77b4fe6fc1babbe630158c45a1131b2b6c612fb23caebee7d44ca9f2467dcf45
+    75d080c886c57899a9dcd3a6ffff1a53f011050ce055f5969db2df0e6626fa53
+Signature:
+  R:
+    7b208fd6deb866a51570c1d21221a8ae1b0991496b3ae9def47a99ca1546aec34a95073b
+    2d0fee6d47bca01834756649000000000000000000000000000000000000000000000000
+  S:
+    d48bb896484307ba19f083cd4a147d221fa437c73ad4d2ad44db6fb562971cbb2682643f
+    4b938ab3532950dc05777b44000000000000000000000000000000000000000000000000

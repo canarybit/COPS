@@ -1,0 +1,107 @@
+[env]
+ORGANISATION_NAME = "CHANGEME"
+
+TEE_ROOT_DIR = "/tmp/"
+TEE_LOG_DIR = "./tee-client-logs.txt"
+
+TEE_APPLICATION_DIR = "application/"
+TEE_CERTS_DIR = "certs/"
+TEE_RESULT_DIR = "result/"
+TEE_COLLABORATION_DIR = "collaboration/"
+TEE_DATA_DIR = "dataset/"
+TEE_REPORT_DIR = "report/"
+TEE_HARDWARE_CERTS_DIR = "hw-certs/"
+TEE_SAMPLE_DIR = "samples/"
+TEE_TEST_DIR = "test/"
+
+TEE_AZURE_ATTESTATION_CLIENT_DIR = "azure-attestation/"
+TEE_AMD_ATTESTATION_CLIENT_DIR = "sev-guest/"
+TEE_AMD_CHAIN_DIR = "amd-chain/"
+
+TEE_COLLABORATION_FILE = "info"
+TEE_ATTESTATION_REPORT_FILE = "guest-report.tar"
+
+TEE_DATA_CERTS_DIR = "dataset/"
+TEE_DATA_CERT_FILE = "cert.pem"
+TEE_DATA_CSR_FILE = "csr.pem"
+TEE_DATA_PRIVATE_KEY_FILE = "key.pem"
+TEE_DATA_PUBLIC_KEY_FILE = "public_key.pem"
+TEE_DATA_VALIDATION_SIGNED_CERTIFICATE = "signed_certificate.pem"
+
+TEE_APPLICATION_CERTS_DIR = "application/"
+TEE_APPLICATION_CERT_FILE = "cert.pem"
+TEE_APPLICATION_CSR_FILE = "csr.pem"
+TEE_APPLICATION_PRIVATE_KEY_FILE = "key.pem"
+TEE_APPLICATION_PUBLIC_KEY_FILE = "public_key.pem"
+TEE_APPLICATION_VALIDATION_SIGNED_CERTIFICATE = "signed_certificate.pem"
+
+TEE_PRIVATE_KEY_FILE = "key.pem"
+TEE_PUBLIC_KEY_FILE = "public_key.pem"
+
+MINIO_DEFAULT_PORT = "443"
+MINIO_DEFAULT_ACTION = "AssumeRoleWithCertificate"
+MINIO_DEFAULT_VERSION = "2011-06-15"
+MINIO_DEFAULT_DURATION = "3600"
+
+AMD_ATTESTATION_GET_REPORT_URL = "https://canarybit-public-binaries.s3.amazonaws.com/sev-guest-get-report"
+AMD_ATTESTATION_PARSE_REPORT_URL = "https://canarybit-public-binaries.s3.amazonaws.com/sev-guest-parse-report"
+AMD_ATTESTATION_GET_REPORT_FILE = "sev-guest-get-report"
+AMD_ATTESTATION_PARSE_REPORT_FILE = "sev-guest-parse-report"
+AMD_ATTESTATION_REPORT_FILE = "report.txt"
+AMD_ATTESTATION_BIN_FILE = "guest_report.bin"
+AMD_ATTESTATION_SNP_REPORT_FILE = "snp_report.bin"
+
+HARDWARE_CERTS_REPO_URL = "https://github.com/canarybit/cc-hw-certs/archive/refs/heads/main.tar.gz"
+HARDWARE_CERTS_TAR_FILE = "main.tar.gz"
+AMD_SEV_SNP_MILAN_CERTS = "cc-hw-certs-main/amd/sev-snp/milan/"
+
+AMD_CHAIN_ARK_PEM = "ark.pem"
+AMD_CHAIN_ASK_PEM = "ask.pem"
+AMD_CHAIN_VCEK_PEM = "vcek.pem"
+
+AMD_CHAIN_ARK_CERT = "ark.cert"
+AMD_CHAIN_ASK_CERT = "ask.cert"
+AMD_CHAIN_VCEK_CERT = "vcek.cert"
+
+AMD_CHAIN_OCA_CERT = "oca.cert"
+AMD_CHAIN_PDH_CERT = "pdh.cert"
+AMD_CHAIN_PEK_CERT = "pek.cert"
+AMD_CHAIN_CEK_CERT = "cek.cert"
+
+AMD_CHAIN_CERTIFICATE_CHAIN = "cert_chain.pem"
+AMD_CHAIN_OVH_VCEK_PEM = "ovh_vcek.pem"
+AMD_CHAIN_VCEK = "vcek"
+AMD_CHAIN_VCEK_DER = "vcek.der"
+SIGNATURE_SIG = "signature.sig"
+
+AWS_VLEK = "a8074bc2-a25a-483e-aae6-39c045a0b8a1"
+ENCLAVE_ID = "id.txt"
+TEE_CLIENT_HASH = "CHANGEME"
+
+INSPECTOR_DOMAIN = "https://verifier.cops.io"
+
+NETWORK_NAME = "tee-net"
+APP_ENV_FILE = ".env"
+APP_NAME = "app"
+
+VECTOR_INTERVAL = "60"
+VECTOR_IMAGE_NAME = "timberio/vector"
+VECTOR_IMAGE_VERSION = "0.29.1-debian"
+VECTOR_RESULT_PATH = "/tmp/result.txt"
+VECTOR_DIR = "vector/"
+VECTOR_PIPELINE_DIR = "vector/pipeline/"
+VECTOR_INFLOW_NAME = "vector-inflow"
+VECTOR_OUTFLOW_NAME = "vector-outflow"
+VECTOR_INFLOW_FILE = "inflow.toml"
+VECTOR_OUTFLOW_FILE = "outflow.toml"
+
+TMPFS_CERTIFICATE_DIR_SIZE = "500"
+TMPFS_RESULT_DIR_SIZE = "100"
+
+RESULT_FILE = "result.tar"
+RESULT_TMP_FILE = "result_tmp.tar"
+
+DOCKER_LOAD_CHECK_INTERVAL = "1"
+DOCKER_LOAD_IMAGE_ATTEMPTS_LIMIT = "60"
+TEST_APPLICATION_TIME_INTERVAL = "1"
+TEST_APPLICATION_ATTEMPTS_LIMIT = "60"

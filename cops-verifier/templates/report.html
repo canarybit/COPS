@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPS Verifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="topleft">
+          A <a href="http://cops.io">COPS Verifier</a> service by <a href="https://cops.io" target="_blank">COPS project</a>
+        </div>
+        <div class="middle">
+          <h3>Submit a report here.</h3>
+          <hr>
+          <form action="/report" method="post" id="report-form" enctype="multipart/form-data">
+            <!-- common required fields -->
+            <fieldset>
+              <legend>Choose the current provider and the report file(s) to submit.</legend>
+              
+              <label>Provider</label>
+              <select id="provider" name="provider" required>
+              {% for provider in Provider  %}
+                <option value="{{ provider.name }}">{{ provider.value.upper() }}</option>
+              {% endfor %}
+              </select>
+
+              <label>Report (text)</label>
+              <input name="report-txt" type="file" required />
+
+              <label>Report (binary)</label>
+              <input name="report-bin" type="file" required />
+
+              <label>VCEK certificate</label>
+              <input name="vcek" type="file" required />
+            </fieldset>
+
+            <!-- if OVH -->
+            <fieldset id="ovh-files" disabled class="hide">
+              <legend>Additional required files.</legend>
+
+              <label>ARK certificate</label>
+              <input name="ark" type="file" required />
+
+              <label>ASK certificate</label>
+              <input name="ask" type="file" required />
+            </fieldset>
+
+            <!-- if AWS -->
+            <fieldset id="aws-files" disabled class="hide">
+              <legend>Additional required files.</legend>
+
+              <label>VLEK certificate</label>
+              <input name="vlek" type="file" required />
+            </fieldset>
+
+            <fieldset>
+              <button type="submit">Submit</button>
+            </fieldset>
+            
+          </form>
+
+          <div id="validation-wait" class="hide loader"></div>
+          <div id="validation-result" class="hide"></div>
+
+        </div>
+        <div class="bottomleft">
+          © Canary Bit AB | <a href="#">Terms & Conditions</a> - <a href="https://cops.io" target="_blank">Support</a> - <a href="{{ url_for('home') }}">Home</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/report.js') }}"></script>
+
+</body>
+
+</html>
