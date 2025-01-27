@@ -19,14 +19,14 @@ Your can read more about them below.
 The tee-client is a small client application written in Rust that collects information about the confidential computing
 virtual machine environment. It then sends it over to the verifier to check that the security properties of the
 environment.
-You can read more in the README.md of the tee-client.
+You can read more in the [README](https://github.com/canarybit/COPS/blob/main/tee-client/README.md) of the tee-client.
 
 ### cops-verifier
 The cops-verifier is an attestation service implemented following [RFC9334](https://datatracker.ietf.org/doc/rfc9334/).
 It consumes _attestation reports_ produced by the tee-client and verifies their validity and correctness.
 Upon successful validation, it returns to the tee-client credentials to access resources (like data fed to a search
 engine).
-You can read more in the README.md of the cops-verifier.
+You can read more in the [README](https://github.com/canarybit/COPS/blob/main/cops-verifier/README.md) of the cops-verifier.
 
 ## Running the project
 To run the project, configure and build each of the components individually.
