@@ -30,7 +30,7 @@ You can read more in the [README](https://github.com/canarybit/COPS/blob/main/co
 
 ## Running the project
 To run the project, configure and build each of the components individually.
-Note that the tee-client should run in a confidential VM, such as the ones provided on 
+Note that the tee-client should run in a [confidential VM](https://en.wikipedia.org/wiki/Confidential_computing), such as the ones provided on 
 [GCP](https://cloud.google.com/security/products/confidential-computing) 
 or [AWS](https://aws.amazon.com/confidential-computing/).
 
