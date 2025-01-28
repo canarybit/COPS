@@ -33,7 +33,8 @@ Note that the tee-client should run in a [confidential VM instance](https://en.w
 [GCP](https://cloud.google.com/security/products/confidential-computing) 
 or [AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html).
 Note that the confidentiality and integrity guarantees of COPS only apply to data **in memory**.
-This means that to avoid data leakage in case of memory swapping, the search engine should launch confiential VM instances without a disk.  
+This means that to avoid data leakage in case of memory swapping, the search engine should launch confiential VM instances without a disk.
+Integrating disk encryption with COPS is in the current roadmap but pending on ongoing development in other dependecies. 
 
 ## Performance and scalability considerations
 
