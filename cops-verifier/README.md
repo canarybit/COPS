@@ -68,6 +68,11 @@ In order to run the tests run the following command:
 ```
 python3 test.py
 ```
+
+## Performance
+The cops-verifier is highly scalable, primarily thanks to it's stateless implementation.
+In a recent test, a single instance of cops-verifier running on an AWS instanced with 2 vCPU and 4 GB RAM produced ~25 Att/sec.
+
 =======
 
 
