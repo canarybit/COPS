@@ -29,9 +29,9 @@ You can read more in the [README](https://github.com/canarybit/COPS/blob/main/co
 
 ## Running the project
 To run the project, configure and build each of the components individually.
-Note that the tee-client should run in a [confidential VM](https://en.wikipedia.org/wiki/Confidential_computing), such as the ones provided on 
+Note that the tee-client should run in a [confidential VM instance](https://en.wikipedia.org/wiki/Confidential_computing), such as the ones provided on 
 [GCP](https://cloud.google.com/security/products/confidential-computing) 
-or [AWS](https://aws.amazon.com/confidential-computing/).
+or [AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html).
 Note that the confidentiality and integrity guarantees of COPS only apply to data **in memory**.
 This means that to avoid data leakage in case of memory swapping, the search engine should launch confiential VM instances without a disk.  
 
@@ -40,7 +40,7 @@ This means that to avoid data leakage in case of memory swapping, the search eng
 We encourage you to read the documentation of the target search engine ([ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/important-settings.html) or [OpenSearch](https://opensearch.org/docs/latest/getting-started/) in order to configure it for best performance.
 Considering that the search engine and data should operate entirely in memory to ensure the COPS security guarantees, this influences the choice of VM instance configuration. 
 
-The table below shows the recommended maximum size of the data set for a sample of available VM configurations from AWS with confidental computing support.
+The table below shows the recommended maximum size of the data set for a sample of available VM instance configurations from AWS with [confidental computing support](https://cloud.google.com/security/products/confidential-computing).
 As a rough guideline, the recommended maximum data set size should be 50% of the RAM available to the instance.
 Note that other cloud providers may have VM instances with confidential computing support with a different configuration.
 
