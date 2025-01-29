@@ -41,7 +41,8 @@ Integrating disk encryption with COPS is in the current roadmap but pending on o
 We encourage you to read the documentation of the target search engine ([ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/important-settings.html) or [OpenSearch](https://opensearch.org/docs/latest/getting-started/) in order to configure it for best performance.
 Considering that the search engine and data should operate entirely in memory to ensure the COPS security guarantees, this influences the choice of VM instance configuration. 
 
-The table below shows the recommended maximum size of the data set for a sample of available VM instance configurations from AWS with [confidental computing support](https://cloud.google.com/security/products/confidential-computing).
+The table below shows the recommended maximum size of the data set for a sample of available VM instance configurations from AWS with [confidental computing support](https://cloud.google.com/security/products/confidential-computing). 
+This is based on our tests with various data set sizes and confidential VM instance configurations.
 As a rough guideline, the recommended maximum data set size should be 50% of the RAM available to the instance.
 Note that other cloud providers may have VM instances with confidential computing support with a different configuration.
 
