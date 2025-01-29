@@ -47,8 +47,8 @@ Note that other cloud providers may have VM instances with confidential computin
 
 | Instance Size	| vCPU | Memory (GiB) | Recommended maximum data set size (GiB) |
 |---------------|------|--------------|---------------|
-| c6a.large	| 2	| 4	|  2 | 
-| c6a.xlarge |	4 |	8	| 4 | 
+| c6a.large	| 2	| 4	|  Not recommended, insufficient resources | 
+| c6a.xlarge |	4 |	8	| Not recommended, insufficient resources | 
 | c6a.2xlarge	| 8	| 16| 	8	|   
 | c6a.4xlarge	| 16	| 32		|16 |
 | c6a.8xlarge |	32 |	64		| 32 |
